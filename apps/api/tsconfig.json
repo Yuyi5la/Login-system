@@ -1,0 +1,23 @@
+{
+  "compilerOptions": {
+    /* Node.js + ESM setup */
+    "target": "ES2022",
+    "module": "NodeNext",
+    "moduleResolution": "NodeNext",
+    "typeRoots": ["./node_modules/@types"],
+
+    /* Folder paths */
+    "rootDir": "src",
+    "outDir": "dist",
+
+    /* Interop and strictness */
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+    "strict": true,
+    "skipLibCheck": true,
+
+    /* Source maps (optional for debugging) */
+    "sourceMap": true
+  },
+  "include": ["src"]
+}
