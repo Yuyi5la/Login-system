@@ -15,6 +15,7 @@
     "dev:web": "turbo run dev --filter=web",
     "dev:api": "turbo run dev --filter=api",
     "dev": "concurrently \"npm run dev:web\" \"npm run dev:api\"",
-    "build": "turbo run build"
+    "build": "turbo run build",
+    "test": "echo \"No tests yet\" && exit 0"
   }
 }
