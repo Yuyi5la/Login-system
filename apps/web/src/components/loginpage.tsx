@@ -1,7 +1,7 @@
 import { useState } from "react";
 
 const LoginPage = () => {
-  const [form, setForm] = useState({
+  const [form, _setForm] = useState({
     email: "",
     password: "",
   });
