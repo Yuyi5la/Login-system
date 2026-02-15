@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { Link } from "react-router-dom";
 
 const LoginPage = () => {
   const [form, _setForm] = useState({
@@ -9,7 +10,7 @@ const LoginPage = () => {
   return (
     <div className="min-h-screen flex items-center justify-center bg-gray-100">
       {/* WHITE CENTER BOX */}
-      <div className="bg-white shadow-5xl rounded-2xl flex w-[90%] max-w-4xl overflow-hidden h-[450px]">
+      <div className="bg-white shadow-8xl rounded-2xl flex w-[90%] max-w-4xl overflow-hidden h-[450px]">
         
         {/* LEFT IMAGE */}
         <div className="w-1/2 hidden md:block">
@@ -59,10 +60,14 @@ const LoginPage = () => {
 
           <p className="text-center text-sm text-gray-600 mt-6">
             Don’t have an account?{" "}
-            <span className="text-pink-800 cursor-pointer">
+            <Link to="/signup"  className="text-pink-800 font-medium hover:underline">
               Sign up
-            </span>
+            </Link>
           </p>
+          <Link to="/signup" className="text-pink-800 font-medium hover:underline text-sm mt-6 block text-center">
+        Forgot password? 
+        </Link>
+
         </div>
       </div>
     </div>
