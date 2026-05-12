@@ -2,8 +2,8 @@
   "compilerOptions": {
     /* Node.js + ESM setup */
     "target": "ES2022",
-    "module": "NodeNext",
-    "moduleResolution": "NodeNext",
+    "module": "ESNext",
+    "moduleResolution":"bundler",
     "typeRoots": ["./node_modules/@types"],
 
     /* Folder paths */
