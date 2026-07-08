@@ -1,5 +1,7 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
+import { FcGoogle } from "react-icons/fc";
+import { FaGithub } from "react-icons/fa";
 
 const LoginPage = () => {
   const [form, _setForm] = useState({
@@ -10,7 +12,7 @@ const LoginPage = () => {
   return (
     <div className="min-h-screen flex items-center justify-center bg-gray-100">
       {/* WHITE CENTER BOX */}
-      <div className="bg-white shadow-8xl rounded-2xl flex w-[90%] max-w-4xl overflow-hidden h-[450px]">
+      <div className="bg-white shadow-8xl rounded-2xl flex w-[90%] max-w-4xl overflow-hidden h-112.5">
         
         {/* LEFT IMAGE */}
         <div className="w-1/2 hidden md:block">
@@ -47,16 +49,17 @@ const LoginPage = () => {
             Log in
           </button>
 
+         
           {/* SOCIAL LOGIN UNDER BUTTON */}
-          <div className="flex flex-row justify-center gap-4 mt-6">
-            <button className="w-1/2 bg-gray-200 py-2 rounded-md">
-              Login with Google
-            </button>
+        <div className="flex justify-center gap-4 mt-6">
+          <button className="bg-gray-200 p-3 rounded-md hover:bg-gray-300 transition">
+          <FcGoogle className="text-3xl" />
+          </button>
 
-            <button className="w-1/2 bg-gray-200 py-2 rounded-md">
-              Login with GitHub
-            </button>
-          </div>
+          <button className="bg-gray-200 p-3 rounded-md hover:bg-gray-300 transition">
+          <FaGithub className="text-3xl" />
+          </button>
+        </div>
 
           <p className="text-center text-sm text-gray-600 mt-6">
             Don’t have an account?{" "}
